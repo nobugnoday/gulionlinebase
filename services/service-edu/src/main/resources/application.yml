@@ -1,0 +1,27 @@
+#应用名称
+spring:
+  application:
+    name: service-edu
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/sh0923-guli_edu?serverTimezone=GMT%2B8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+    # jackson 的时间格式化
+  jackson:
+    # 日期格式
+    date-format: yyyy-MM-dd
+    # 时区
+    time-zone: GMT+8
+# 端口号
+server:
+  port: 8110
+
+# 数据库连接池的配置
+# mp配置
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
